@@ -12,38 +12,38 @@
 <div id='app'>
 <div >
 <label for = 'zhanghu'>账户:</label>
-<input type="text" id="zhanghu"  value="{{ zhanghu }}">
+<input type="text" id="zhanghu"  placeholder='请输入账户名'>
 </div>
 <div >
 <label for = 'password'>密码:</label>
-<input type="text" id="password" value="{{ password }}">
+<input type="text" id="password" placeholder='请输入密码' >
 </div>
 <div >
 <label>性别:</label>
 <input type="radio" >
-<label >{{ sex.man}}</label>
+<label >男</label>
 <input type="radio">
-<label >{{ sex.woman}}</label>
+<label >女</label>
 </div>
 <div >
 <label >性取向:</label>
 <input type="radio" >
-<label >{{ sex.man}}</label>
+<label >男</label>
 <input type="radio">
-<label >{{ sex.woman}}</label>
+<label >女</label>
 </div>
 <div >
 <label>爱好:</label>
-<input type="checkbox" id="rabiat" value="{{ habit.dota}}">
-<input type="checkbox" id="sex3" value="{{ habit.travel}}">
-<input type="checkbox" id="sex3" value="{{ habit.pet}}"><br></br>
-<textarea id="tesxt">
-</textarea>
+<input type="checkbox" id="rabiat" >
+<label>dota</label>
+<input type="checkbox" id="sex3" >
+<label>旅游</label>
+<input type="checkbox" id="sex3" >
+<label>宠物</label>
 </div>
 <div >
 <label>评论:</label>
-<textarea id="tesxt">
-</textarea>
+<textarea id="tesxt"></textarea>
 </div>
 <div >
 <label>我的car:</label>
@@ -55,16 +55,6 @@
 </div>
 <input type="submit" value"提交"/>
 </form>
-<script>
-var a = new Vue({
-  el: '.app',
-  data: {
-    zhanghu: '请输入账户名',
-	password:'请输入密码',
-	sex:{man:'男',woman:'女'},
-	habit:{dota:'dota',travel:'旅游',pet:'宠物'}
-  }
-})
-</script>
+
 </body>
 </html>
